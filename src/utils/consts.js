@@ -9,6 +9,16 @@ export const Consts = {
     GET_HITS: "/hits",
   },
 
+  FILTERS: {
+    FILTERS_NAME: [
+      "Бесплатная доствка",
+      "Пицца",
+      "Суши",
+      "Бургеры",
+      "Пироги",
+    ],
+  },
+
   REQUEST: {
     HEADERS: {
       ACCEPT: "Accept",

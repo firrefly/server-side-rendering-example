@@ -2,7 +2,11 @@
 import { combineReducers } from "redux";
 import { HYDRATE } from 'next-redux-wrapper'
 // Reducers
-import { restaurantsReducer } from "../reducers";
+import {
+  restaurantsReducer,
+  reviewsReducer,
+  hitsReducer,
+} from "../reducers";
 
 export const rootReducer = (state, action) => {
   if (action.type === HYDRATE) {
@@ -16,5 +20,7 @@ export const rootReducer = (state, action) => {
   
   return combineReducers({
     restaurants: restaurantsReducer,
+    reviews: reviewsReducer,
+    hits: hitsReducer,
   })(state, action);
 };

@@ -1,3 +1,9 @@
 import { restaurantsReducer } from "./restaurants";
+import { reviewsReducer } from "./reviews";
+import { hitsReducer } from "./hits";
 
-export { restaurantsReducer };
+export {
+  restaurantsReducer,
+  reviewsReducer,
+  hitsReducer,
+};

@@ -2,8 +2,10 @@
 import React, { memo } from "react";
 import Head from "next/head";
 import { getServerSideProps } from "./get-server-side-props";
+// Components
+import { Header } from "@components/header";
 // Styles
-import css from "@/styles.less";
+import css from "@assets/styles/styles.less";
 
 const HomeComponent = () => {
   return (
@@ -14,16 +16,13 @@ const HomeComponent = () => {
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+       <Header />
       </main>
     </div>
   )
 }
 
-const HomeMemo = memo(HomeComponent);
-const Home = HomeMemo;
+const Home = memo(HomeComponent);
 
 export default Home;
 export { getServerSideProps };

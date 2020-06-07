@@ -1,5 +1,11 @@
 {
   "presets": [
+    ["next/babel", {
+      "preset-env": {},
+      "styled-jsx": {
+        "plugins": ["styled-jsx-plugin-less"]
+      }
+    }],
     "@babel/preset-env",
     "@babel/preset-react"
   ],
@@ -24,7 +30,11 @@
         }
       }
     ],
-    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }],
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory":"lib",
+      "style": true
+    }],
     [
       "babel-plugin-styled-components",
       { "ssr": true, "pure": true }

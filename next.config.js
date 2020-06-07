@@ -1,13 +1,22 @@
 const path = require('path');
-const withLess = require('@zeit/next-less');
+const withPlugins = require('next-compose-plugins');
+const antdLessLoader = require("next-antd-aza-less");
 
-module.exports = withLess({
-  cssModules: true,
-  lessLoaderOptions: {
-    javascriptEnabled: true,
-  },
-  webpack(config) {
-    config.resolve.alias['@'] = path.resolve(__dirname, 'src');
-    return config;
-  },
-});
+if (typeof require !== 'undefined') {
+  require.extensions['.less'] = (file) => {}
+}
+
+const plugins = [
+  antdLessLoader({
+    cssModules: true,
+    cssLoaderOptions: {
+      importLoaders: 1,
+      localIdentName: "[local]___[hash:base64:5]",
+    },
+    lessLoaderOptions: {
+      javascriptEnabled: true,
+    }
+  }),
+];
+
+module.exports = withPlugins(plugins);

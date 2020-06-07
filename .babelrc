@@ -10,6 +10,7 @@
           "@": "./src",
           "@actions": "./src/actions",
           "@api": "./src/api",
+          "@assets": "./src/assets",
           "@components": "./src/components",
           "@constants": "./src/constants",
           "@epic": "./src/epic",
@@ -17,6 +18,7 @@
           "@models": "./src/models",
           "@redux": "./src/redux",
           "@reducers": "./src/redusers",
+          "@selectors": "./src/selectors",
           "@state": "./src/state",
           "@utils": "./src/utils"
         }

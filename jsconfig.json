@@ -5,6 +5,7 @@
       "@/*": ["./*"],
       "@actions/*": ["actions/*"],
       "@api/*": ["api/*"],
+      "@assets/*": ["assets/*"],
       "@constants/*": ["constants/*"],
       "@components/*": ["components/*"],
       "@epic/*": ["epic/*"],
@@ -12,6 +13,7 @@
       "@models/*": ["models/*"],
       "@redux/*": ["redux/*"],
       "@reducers/*": ["reducers/*"],
+      "@selectors*": ["selectors/*"],
       "@state/*": ["state/*"],
       "@utils/*": ["utils/*"]
     }

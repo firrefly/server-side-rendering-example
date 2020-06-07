@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@actions/*": ["actions/*"],
+      "@api/*": ["api/*"],
+      "@constants/*": ["constants/*"],
+      "@components/*": ["components/*"],
+      "@epic/*": ["epic/*"],
+      "@lib/*": ["lib/*"],
+      "@models/*": ["models/*"],
+      "@redux/*": ["redux/*"],
+      "@reducers/*": ["reducers/*"],
+      "@state/*": ["state/*"],
+      "@utils/*": ["utils/*"]
+    }
+  }
+}

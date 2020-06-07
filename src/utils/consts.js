@@ -9,9 +9,13 @@ export const Consts = {
     GET_HITS: "/hits",
   },
 
+  DEBOUNCE: {
+    SEARCH_MS: 300,
+  },
+
   FILTERS: {
     FILTERS_NAME: [
-      "Бесплатная доствка",
+      "Бесплатная доставка",
       "Пицца",
       "Суши",
       "Бургеры",

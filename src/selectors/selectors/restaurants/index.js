@@ -11,4 +11,4 @@ export const restaurantsFiltersSelector = ({ restaurants }) => restaurants.filte
 export const restaurantsSearchSelector = ({ restaurants }) => restaurants.search.name;
 
 // Ui
-export const restaurantsFiltersSelector = ({ restaurants }) => restaurants.ui;
+export const restaurantsUiSelector = ({ restaurants }) => restaurants.ui;

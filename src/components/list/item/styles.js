@@ -23,4 +23,17 @@ export const styles = css`
   .info__header {
     display: flex;
   }
+
+  @media (max-width: 768px) {
+    .list-item__right-block {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .list__item {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `;

@@ -20,6 +20,7 @@
           "@components": "./src/components",
           "@constants": "./src/constants",
           "@epic": "./src/epic",
+          "@layouts": "./src/layouts",
           "@lib": "./src/lib",
           "@models": "./src/models",
           "@redux": "./src/redux",

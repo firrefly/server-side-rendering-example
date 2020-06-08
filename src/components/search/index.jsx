@@ -22,6 +22,7 @@ const SearchComponent = ({ changeSearch }) => {
         <Input
           onChange={setSearch}
           placeholder="Поиск заведения"
+          size="large"
         />
       </div>
       <style jsx>{styles}</style>

@@ -18,4 +18,10 @@ export const styles = css`
     margin-left: 5px;
     font-size: 0.8em;
   }
+
+  @media (max-width: 768px) {
+    .menu-card {
+      justify-content: center;
+    }
+  }
 `;

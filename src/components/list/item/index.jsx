@@ -23,6 +23,7 @@ const ItemComponent = ({ item }) => {
     <>
       <div className="list__item">
         <FirstBlock item={item} />
+
         <div className="list-item__right-block">
          <SecondBlock item={item} />
          <ThirdBlock item={item} />

@@ -9,6 +9,7 @@
       "@constants/*": ["constants/*"],
       "@components/*": ["components/*"],
       "@epic/*": ["epic/*"],
+      "@layouts/*": ["layouts/*"],
       "@lib/*": ["lib/*"],
       "@models/*": ["models/*"],
       "@redux/*": ["redux/*"],

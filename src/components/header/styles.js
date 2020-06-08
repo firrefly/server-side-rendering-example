@@ -6,6 +6,10 @@ export const styles = css`
     display: flex;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
   }
 
   .header__logo {
@@ -16,5 +20,18 @@ export const styles = css`
 
   .header__search {
     flex: 1 1 auto;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+
+      & > div {
+        width: 100%;
+        &:first-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
   }
 `;

@@ -1,10 +1,16 @@
 import React from "react";
 import App from "next/app";
+// Layouts
+import { PlanLayout } from "@layouts";
 // Store
 import { makeStoreWrapper } from "@redux";
 
 const WrappedApp = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return (
+    <PlanLayout>
+      <Component {...pageProps} />
+    </PlanLayout>
+  );
 };
 
 WrappedApp.getInitialProps = async({ Component, ctx }) => ({

@@ -6,4 +6,10 @@ export const styles = css`
     padding: 5px 0;
     user-select: none;
   }
+
+  @media (max-width: 992px) {
+    .filters__item {
+      margin-left: 15px;
+    }
+  }
 `;

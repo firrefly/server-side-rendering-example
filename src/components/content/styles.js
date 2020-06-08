@@ -13,7 +13,6 @@ export const styles = css`
     position: sticky;
     top: 105px;
     z-index: 100;
-    width: 100%;
     background-color: #fff;
   }
 
@@ -31,6 +30,7 @@ export const styles = css`
   @media (max-width: 768px) {
     .content__filters {
       top: 160px;
+      width: 100%;
     }
   }
 `;

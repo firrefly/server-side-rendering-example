@@ -29,25 +29,8 @@ export const restaurantsOptionsFilterClient = createSelector(
     .map(({ id }) => id),
 );
 
-export const restaurantsFiltersChecked = createSelector(
-  [
-    restaurantsFoodFilterClient,
-    restaurantsOptionsFilterClient,
-  ],
-  (foodFilter, optionsFilter) => ({ foodFilter, optionsFilter }),
-);
-
 // Search
 export const restaurantsSearchSelector = ({ restaurants }) => restaurants.search.name;
-export const restaurantsValidSearchSelector = createSelector(
-  restaurantsSearchSelector,
-  (name = '') => {
-    const validName = name.trim();
-
-    return validName.length 
-      ? validName.toUpperCase() : null;
-  }
-);
 
 // Ui
 export const restaurantsUiSelector = ({ restaurants }) => restaurants.ui;

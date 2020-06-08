@@ -17,7 +17,7 @@ export const Consts = {
   FILTERS: {
     OPTIONS_FILTER: [
       {
-        id: "MinCost",
+        id: "DeliveryCost",
         type: "options",
         name: "Бесплатная доставка",
         checked: false,

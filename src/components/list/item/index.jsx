@@ -1,22 +1,31 @@
 // Modules
 import React, { memo, useCallback } from "react";
+// Modules Components
+import { Typography } from "antd";
+import { LikeOutlined } from "@ant-design/icons";
+// Components
+import { FirstBlock } from "./first-block";
+import { SecondBlock } from "./second-block";
+import { ThirdBlock } from "./third-block";
 // Styles
 import { styles } from "./styles";
 
+const { Text } = Typography;
+
 const ItemComponent = ({ item }) => {
+  const renderSpecializations = useCallback(({ Name }) => (
+    <div key={Name}>
+      {Name}
+    </div>
+  ), []);
+
   return (
     <>
       <div className="list__item">
-        <div className="list-item__image">
-          <img src={item.Logo} alt={item.Name} />
-        </div>
+        <FirstBlock item={item} />
         <div className="list-item__right-block">
-          <div className="list-item__info">
-            <div>{item.Name}</div>
-          </div>
-          <div className="list-item__options">
-            options
-          </div>
+         <SecondBlock item={item} />
+         <ThirdBlock item={item} />
         </div>
       </div>
       <style jsx>{styles}</style>

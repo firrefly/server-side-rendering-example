@@ -2,6 +2,7 @@
 import React, { memo } from "react";
 // Components
 import { Filters } from "@components/filters";
+import { List } from "@components/list";
 // Styles
 import { styles } from "./styles";
 
@@ -13,7 +14,7 @@ const ContentComponent = () => {
           <Filters />
         </div>
         <div className="content__list">
-          List
+          <List />
         </div>
       </div>
       <style jsx>{styles}</style>

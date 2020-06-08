@@ -2,8 +2,8 @@
 import css from "styled-jsx/css";
 
 export const styles = css`
-  .filters__item {
-    padding: 5px 0;
-    user-select: none;
+  .content__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 `;

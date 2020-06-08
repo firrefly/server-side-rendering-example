@@ -10,8 +10,6 @@ export const styles = css`
 
   .content__filters {
     margin-right: 20px;
-    width: 225px;
-    height: 65px;
   }
 
   .content__list {

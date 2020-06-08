@@ -12,8 +12,8 @@ export const ItemComponent = ({ changeFilters, item, index }) => {
     <>
       <div className="filters__item item">
         <Checkbox
+          checked={item.checked}
           onChange={onChange}
-          value={item.checked}
         >
           {item.name}
         </Checkbox>

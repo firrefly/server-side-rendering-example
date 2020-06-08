@@ -10,7 +10,14 @@ const ItemComponent = ({ item }) => {
         <div className="list-item__image">
           <img src={item.Logo} alt={item.Name} />
         </div>
-        <div>{item.Name}</div>
+        <div className="list-item__right-block">
+          <div className="list-item__info">
+            <div>{item.Name}</div>
+          </div>
+          <div className="list-item__options">
+            options
+          </div>
+        </div>
       </div>
       <style jsx>{styles}</style>
     </>

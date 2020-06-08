@@ -13,15 +13,44 @@ export const Consts = {
     SEARCH_MS: 300,
   },
 
+  // --> IT'S HARD CODE!!!
   FILTERS: {
-    FILTERS_NAME: [
-      "Бесплатная доставка",
-      "Пицца",
-      "Суши",
-      "Бургеры",
-      "Пироги",
+    OPTIONS_FILTER: [
+      {
+        id: "MinCost",
+        type: "options",
+        name: "Бесплатная доставка",
+        checked: false,
+      }
+    ],
+    FOOD_FILTERS: [
+      {
+        id: "pizza",
+        type: "food",
+        name: "Пицца",
+        checked: false,
+      },
+      {
+        id: "sushi",
+        type: "food",
+        name: "Суши",
+        checked: false,
+      },
+      {
+        id: "burgers",
+        type: "food",
+        name: "Бургеры",
+        checked: false,
+      },
+      {
+        id: "pies",
+        type: "food",
+        name: "Пироги",
+        checked: false,
+      },
     ],
   },
+  // <-- IT'S HARD CODE!!!
 
   REQUEST: {
     HEADERS: {

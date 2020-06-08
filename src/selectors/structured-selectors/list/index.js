@@ -1,8 +1,8 @@
 // Modules
 import { createStructuredSelector } from "reselect";
 // Selectors
-import { restaurantsListSelector } from "../../selectors/restaurants";
+import { contentFiltersSelector } from "../../selectors/content";
 
 export const listStructuredSelector = createStructuredSelector({
-  list: restaurantsListSelector,
+  list: contentFiltersSelector,
 });

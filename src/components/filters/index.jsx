@@ -7,14 +7,33 @@ import { enhance } from "./enhance";
 // Styles
 import { styles } from "./styles";
 
-const FiltersComponent = ({ changeFilters, filters }) => {
-  const changeFiltersMemo = useCallback(index => changeFilters(index), []);
+const FiltersComponent = ({ 
+  changeFilters,
+  changeOptionsFilter,
+  foodFilters,
+  optionsFilters,
+}) => {
+  const renderOptionsFilters = useCallback(
+    (item, index) => {
+      return (
+        <Item 
+          key={item.id}
+          filter="options"
+          changeFilters={changeFilters}
+          index={index}
+          item={item}
+        />
+      );
+    },
+    [optionsFilters]
+  );
 
   const renderItem = useCallback(
     (item, index) => (
       <Item
         key={item.id}
-        changeFilters={changeFiltersMemo}
+        filter="foodList"
+        changeFilters={changeFilters}
         index={index}
         item={item}
       />
@@ -24,7 +43,8 @@ const FiltersComponent = ({ changeFilters, filters }) => {
   return (
     <>
       <div className="filters">
-        {filters.map(renderItem)}
+        {optionsFilters.map(renderOptionsFilters)}
+        {foodFilters.map(renderItem)}
       </div>
       <style jsx>{styles}</style>
     </>

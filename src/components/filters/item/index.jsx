@@ -5,8 +5,17 @@ import { Checkbox } from "antd";
 // Styles
 import { styles } from "./styles";
 
-export const ItemComponent = ({ changeFilters, item, index }) => {
-  const onChange = useCallback(() => changeFilters(index), []);
+export const ItemComponent = ({
+  changeFilters,
+  changeOptionsFilters,
+  item,
+  index,
+  filter,
+}) => {
+  const onChange = useCallback(() => 
+    changeFilters(filter, index),
+    [index, item.id]
+  );
 
   return (
     <>

@@ -2,6 +2,7 @@ import {
   RESTAURANTS_SAVE,
   RESTAURANTS_CHANGE_SEARCH,
   RESTAURANTS_CHANGE_FILTERS,
+  RESTAURANTS_CHANGE_OPTIONS_FILTERS,
   RESTAURANTS_PENDING,
   RESTAURANTS_SUCCESS,
   RESTAURANTS_ERROR,
@@ -17,9 +18,9 @@ export const restaurantsChangeSearch = (search = "") => ({
   payload: search,
 });
 
-export const restaurantsChangeFilters = index => ({
+export const restaurantsChangeFilters = (filter, index) => ({
   type: RESTAURANTS_CHANGE_FILTERS,
-  payload: index,
+  payload: { filter, index },
 });
 
 export const restaurantsPending = (details = null) => ({

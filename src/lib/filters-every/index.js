@@ -1,6 +1,6 @@
 export const filtersEvery = (filterKey, options) => {
   switch (filterKey) {
-    case "MinCost": {
+    case "DeliveryCost": {
       return options[filterKey] === 0;
     }
 

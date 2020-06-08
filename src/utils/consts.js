@@ -18,7 +18,6 @@ export const Consts = {
     OPTIONS_FILTER: [
       {
         id: "DeliveryCost",
-        type: "options",
         name: "Бесплатная доставка",
         checked: false,
       }
@@ -26,25 +25,21 @@ export const Consts = {
     FOOD_FILTERS: [
       {
         id: "pizza",
-        type: "food",
         name: "Пицца",
         checked: false,
       },
       {
         id: "sushi",
-        type: "food",
         name: "Суши",
         checked: false,
       },
       {
         id: "burgers",
-        type: "food",
         name: "Бургеры",
         checked: false,
       },
       {
         id: "pies",
-        type: "food",
         name: "Пироги",
         checked: false,
       },

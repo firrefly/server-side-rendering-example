@@ -1,15 +1,11 @@
 // Modules
 import React, { memo, useCallback } from "react";
-// Modules Components
-import { Typography } from "antd";
-import { LikeOutlined } from "@ant-design/icons";
 // Components
 import { TitleCard } from "./title-card";
 import { FoodList } from "./food-list";
+import { MenuCard } from "./menu-card";
 // Styles
 import { styles } from "./styles";
-
-const { Text } = Typography;
 
 const SecondBlockComponent = ({ item }) => {
   const renderSpecializations = useCallback(({ Name }) => (
@@ -25,6 +21,7 @@ const SecondBlockComponent = ({ item }) => {
           {item.Specializations.map(renderSpecializations)}
         </div>
 
+        <MenuCard item={item} />
       </div>
       <style jsx>{styles}</style>
     </>

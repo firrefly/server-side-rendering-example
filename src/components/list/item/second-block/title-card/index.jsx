@@ -22,7 +22,7 @@ const TitleCardComponent = ({ item }) => {
           <div>
             <Text
               strong
-              type={item.PositiveReviews > 50 ? "secondary" : "warning"}
+              type={item.PositiveReviews > 50 ? "warning" : "secondary"}
             >
               {`${item.PositiveReviews}%`}
             </Text>

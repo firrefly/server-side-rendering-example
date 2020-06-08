@@ -26,7 +26,7 @@ export const contentFiltersSelector = createSelector(
 
       const isFood = filters.foodFilter.length 
         ? Specializations
-          .every(({ Name }) => filters.foodFilter.includes(Name))
+          .some(({ Name }) => filters.foodFilter.includes(Name))
         : true;
       
       const isOptions = filters.optionsFilter

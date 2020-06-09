@@ -25,6 +25,10 @@ export const styles = css`
       flex-direction: column;
       align-items: center;
     }
+
+    .content__filters {
+      width: 100%;
+    }
   }
 
   @media (max-width: 768px) {

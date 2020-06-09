@@ -2,18 +2,12 @@
 import css from "styled-jsx/css";
 
 export const styles = css`
-  .hits {
+  .rewiews {
     margin-top: 20px;
   }
 
-  .hits__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px 0 0 -10px;
-  }
-
   @media (max-width: 768px) {
-    .header-hits {
+    .header-rewiews {
       text-align: center;
     }
   }

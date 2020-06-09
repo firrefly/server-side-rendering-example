@@ -5,4 +5,4 @@ import { createSelector } from "reselect";
 export const reviewsListSelector = ({ reviews }) => reviews.list;
 
 // Ui
-export const reviewsFiltersSelector = ({ reviews }) => reviews.ui;
+export const reviewsUiSelector = ({ reviews }) => reviews.ui;

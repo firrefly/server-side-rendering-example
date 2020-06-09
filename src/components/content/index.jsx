@@ -4,6 +4,7 @@ import React, { memo } from "react";
 import { Filters } from "@components/filters";
 import { List } from "@components/list";
 import { Hits } from "@components/hits";
+import { Rewiews } from "@components/reviews";
 // Styles
 import { styles } from "./styles";
 
@@ -17,6 +18,7 @@ const ContentComponent = () => {
         <div className="content__list">
           <List />
           <Hits />
+          <Rewiews />
         </div>
       </div>
       <style jsx>{styles}</style>

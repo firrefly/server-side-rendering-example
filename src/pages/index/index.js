@@ -1,12 +1,13 @@
 // Modules
 import React, { memo } from "react";
 import Head from "next/head";
-import { getServerSideProps } from "./get-server-side-props";
+import { getServerSideProps } from "@lib/server-request/home";
 // Components
 import { Header } from "@components/header";
 import { Content } from "@components/content";
 // Styles
-import css from "@assets/styles/styles.less";
+import css from 'antd/dist/antd.less';
+// import css from "@assets/styles/styles.less";
 
 const HomeComponent = () => {
   return (
